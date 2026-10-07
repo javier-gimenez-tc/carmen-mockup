@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. · Paso 2 — Generación guiada de documentación</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html" class="active"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 2 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <nav class="stepper">
+        <a class="step done" href="expediente.html"><span class="n">1</span><span class="lbl">Ingesta documental</span></a>
+        <a class="step cur" href="generacion.html"><span class="n">2</span><span class="lbl">Generación guiada</span></a>
+        <a class="step" href="revision.html"><span class="n">3</span><span class="lbl">Revisión automática</span></a>
+        <a class="step" href="editor.html"><span class="n">4</span><span class="lbl">Revisión humana</span></a>
+        <a class="step" href="valoracion.html"><span class="n">5</span><span class="lbl">Exportación</span></a>
+      </nav>
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs"><a href="expediente.html">EXP-2026-0147</a> / Paso 2</div>
+          <h1>Generación guiada de la documentación de inicio</h1>
+          <p>El agente genera borradores de los documentos de inicio aplicables y pregunta <b>solo lo que no puede determinar</b> con la información disponible.</p>
+        </div>
+      </div>
+
+      <div class="section grid-2" style="align-items:start">
+        <div class="card">
+          <h2>Datos determinados</h2>
+          <div class="sub">Extraídos con procedencia a la fuente. La edición del borrador se realiza en el paso 4 (revisión humana).</div>
+          <div class="field"><label>Objeto</label><div class="fake-input">Suministro e instalación de válvulas de balasto y achique — F-110 (lote 3)</div><div class="chip cite" style="margin-top:5px">FUENTE · doc. inicio §2,p.2 + PPT/ETC §1</div></div>
+          <div class="field"><label>Alcance</label><div class="fake-input">Suministro de 24 válvulas + instalación y puesta en servicio a bordo (astillero de Ferrol)</div><div class="chip cite" style="margin-top:5px">FUENTE · PPT/ETC §3.1, p.9</div></div>
+          <div class="field"><label>Requisitos técnicos</label><div class="fake-input">Clases PN16/PN25 · conexión DN50 · acero inox. 316L · homologación certificable</div><div class="chip cite" style="margin-top:5px">FUENTE · PPT/ETC §2, p.6-8</div></div>
+          <div class="field"><label>Presupuesto estimado</label><div class="fake-input">214.500,00 € IVA excl.</div><div class="chip cite" style="margin-top:5px">FUENTE · económica · hoja resumen</div></div>
+          <div class="field" style="margin-bottom:0"><label>Fechas · plazo máximo de entrega</label><div class="fake-input">16 semanas desde la formalización</div><div class="chip cite" style="margin-top:5px">FUENTE · ficha inicio §3,p.1</div></div>
+        </div>
+
+        <div class="card">
+          <h2>Datos no determinables (2)</h2>
+          <div class="sub">C.A.R.M.E.N. se abstiene sin evidencia y pregunta, con justificación de cada solicitud.</div>
+          <div class="field"><label>Modalidad de admisión de ofertas</label>
+            <div class="fake-input empty">Pendiente de respuesta…</div>
+            <div class="just">⚠ El documento de inicio no concreta si la admisión será simultánea o sucesiva (art. 10 TRLCSP)</div>
+          </div>
+          <div class="field" style="margin-bottom:0"><label>Incoterm / punto de entrega</label>
+            <div class="fake-input empty">Pendiente de respuesta…</div>
+            <div class="just">⚠ Las partidas económicas figuran FOB; el alcance incluye montaje a bordo — la revisión automática lo tratará como hallazgo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <h2>Borradores generados</h2>
+          <div class="sub">Cada borrador queda como resultado tipo borrador, versionado y sin materializar hasta su validación humana (paso 4).</div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px">
+            <span class="chip">Plantillas de referencia de Navantia · rev. 7 · vigentes</span>
+            <span class="chip">Normativa de compras: N-010 · P-APR-001 · I-C-008</span>
+          </div>
+          <table class="tbl">
+            <thead><tr><th>Documento</th><th>Versión</th><th>Completitud</th><th>Procedencia</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><b>FIP — Ficha de Inicio del Procedimiento</b></td><td class="mono">v2</td><td>100 %</td><td>27 afirmaciones trazadas</td><td><a class="btn btn-ghost btn-sm" href="editor.html">Ver en editor →</a></td></tr>
+              <tr><td><b>IIP — Impreso de Inicio del Procedimiento</b></td><td class="mono">v2</td><td>100 %</td><td>9 afirmaciones trazadas</td><td><a class="btn btn-ghost btn-sm" href="editor.html">Ver en editor →</a></td></tr>
+              <tr><td><b>IEP — Impreso de Excepción del Procedimiento</b></td><td class="mono">v2</td><td>100 %</td><td>6 afirmaciones trazadas</td><td><a class="btn btn-ghost btn-sm" href="editor.html">Ver en editor →</a></td></tr>
+              <tr><td><b>PCP — Pliego de Condiciones Particulares</b></td><td class="mono">v3</td><td>91 % · 2 vacíos</td><td>27 afirmaciones trazadas</td><td><a class="btn btn-ghost btn-sm" href="editor.html">Abrir editor →</a></td></tr>
+              <tr><td><b>Contrato M-XXIV adecuado</b></td><td class="mono">v1</td><td>58 % · en cola</td><td>12 afirmaciones trazadas</td><td><span class="muted">se notificará al completarse</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section" style="max-width:640px; margin-left:auto; margin-right:auto">
+        <div class="btn-row" style="justify-content:space-between">
+          <a class="btn btn-ghost" href="expediente.html">← Volver a la ingesta</a>
+          <a class="btn btn-primary" href="revision.html">Continuar a revisión automática →</a>
+        </div>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Herramienta de apoyo · no sustituye la decisión del comprador</span>
+    </footer>
+  </div>
+</div>
+
+<a class="chat-fab" href="asistente.html"><span class="dot"></span> Asistente</a>
+</body>
+</html>
+

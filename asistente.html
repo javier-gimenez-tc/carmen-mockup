@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. — Asistente en lenguaje natural</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html" class="active"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 3 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs"><a href="expediente.html">EXP-2026-0147</a> / Asistente</div>
+          <h1>Asistente C.A.R.M.E.N.</h1>
+          <p>Conversación sobre el expediente y la documentación. Solo concluye con evidencia suficiente; siempre con citas al fragmento.</p>
+        </div>
+      </div>
+
+      <div class="chat-wrap">
+        <div class="msg user"><div class="bub">¿Está listo el expediente para elevarlo a aprobación?</div></div>
+
+        <div class="msg carmen">
+          <div class="avatar">C</div>
+          <div class="bub">
+            <div class="who">C.A.R.M.E.N.</div>
+            No todavía: la revisión lo clasifica como <b>Apto para continuar con ajustes</b> <span class="chip cite">⑄ Informe ACT-08712</span>. Puedes:
+            <div class="sugerencias" style="margin-top:8px">
+              <a class="btn btn-ghost btn-sm" href="revision.html">Ver informe de revisión →</a>
+              <a class="btn btn-ghost btn-sm" href="editor.html">Revisar el borrador PCP v3 →</a>
+              <a class="btn btn-ghost btn-sm" href="valoracion.html">Valorar y cerrar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="msg user"><div class="bub">¿Qué presupuesto tengo asignado y de dónde lo has sacado?</div></div>
+
+        <div class="msg carmen">
+          <div class="avatar">C</div>
+          <div class="bub">
+            <div class="who">C.A.R.M.E.N.</div>
+            <b>214.500,00 € IVA excluido.</b>
+            <div style="margin-top:8px"><span class="chip cite">⑄ Económica · Hoja Resumen</span> <span class="chip cite">⑄ Doc. inicio §2, p.2</span></div>
+            <div style="font-size:12px; color:var(--nv-slate); margin-top:6px">Aviso: la partida de montaje no figura en el desglose aunque la PPT/ETC la incluye — hallazgo H-2.</div>
+          </div>
+        </div>
+
+        <div class="msg user"><div class="bub">¿El proveedor puede entregar en octubre?</div></div>
+
+        <div class="msg carmen">
+          <div class="avatar">C</div>
+          <div class="bub">
+            <div class="who">C.A.R.M.E.N.</div>
+            <span class="tipo-alerta tipo-salida" style="display:inline-flex; margin-bottom:6px">Abstención</span><br>
+            <b>Sin evidencia suficiente.</b> No hay documentación del proveedor cargada en el expediente y en Fase 1 no se consultan sistemas externos. Necesitaría su compromiso de plazos registrado en el expediente.
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input" style="margin-top:16px">
+        <div class="ph">Pregunta sobre EXP-2026-0147…</div>
+        <span class="chip cite">⑄ responde con citas</span>
+        <a class="btn btn-cyan btn-sm" href="#">▶</a>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Las respuestas son recomendaciones · nunca emiten decisión formal</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
+

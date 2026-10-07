@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. · Paso 3 — Revisión automática del expediente</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html" class="active"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 3 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <nav class="stepper">
+        <a class="step done" href="expediente.html"><span class="n">1</span><span class="lbl">Ingesta documental</span></a>
+        <a class="step done" href="generacion.html"><span class="n">2</span><span class="lbl">Generación guiada</span></a>
+        <a class="step cur" href="revision.html"><span class="n">3</span><span class="lbl">Revisión automática</span></a>
+        <a class="step" href="editor.html"><span class="n">4</span><span class="lbl">Revisión humana</span></a>
+        <a class="step" href="valoracion.html"><span class="n">5</span><span class="lbl">Exportación</span></a>
+      </nav>
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs"><a href="expediente.html">EXP-2026-0147</a> / Paso 3 · informe</div>
+          <h1>Revisión automática de coherencia y completitud</h1>
+          <p>Informe tipo resumen ejecutivo generado por el agente de revisión. La recomendación no sustituye la decisión del órgano de aprobación.</p>
+        </div>
+        <span class="tipo-recomendacion tipo-salida">Recomendación + alertas</span>
+      </div>
+
+      <div class="card" style="border-top:3px solid var(--warn-strong)">
+        <div style="display:flex; align-items:center; gap:14px; flex-wrap:wrap">
+          <span style="font-size:26px">🟠</span>
+          <div style="flex:1; min-width:260px">
+            <div style="font-size:19px; font-weight:800; color:var(--warn-strong)">Apto para continuar con ajustes</div>
+            <div style="font-size:12px; color:var(--nv-slate)">Resumen ejecutivo: documentación de inicio completa y 3 borradores validados. El análisis detecta <b>4 hallazgos</b> — tres contradicciones de contenido (alcance-presupuesto, plazos y criterios de aceptación del contrato) y un documento ilegible. Resueltos H-2, H-3 y H-5, el expediente alcanzaría <b>Apto para continuar</b>.</div>
+          </div>
+          <div style="display:flex; flex-direction:column; gap:3px; align-items:flex-end">
+            <span class="badge badge-ok">Apto para continuar</span>
+            <span class="badge badge-warn">Apto con ajustes ←</span>
+            <span class="badge badge-danger">No recomendable sin correcciones</span>
+          </div>
+        </div>
+        <div class="callout" style="margin-top:16px; background:var(--nv-blue-13); border-color:var(--nv-blue-11); border-left-color:var(--nv-blue); color:var(--nv-slate); font-size:12.5px">
+          <span class="ico">⚖</span>
+          <div><b>Recomendación motivada:</b> 1) confirmar el incoterm de entrega con el área económica (H-2); 2) homogeneizar el plazo con DT Systems (H-3); 3) obtener el justificativo con capa de texto (H-4); 4) incorporar los criterios de aceptación de la instalación al contrato tipo (H-5). Continuar la tramitación con ajustes; la decisión corresponde al órgano competente.</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <h2>Hallazgos e incumplimientos</h2>
+          <div class="sub">Haz clic en «de dónde viene» para ver la fuente y el fragmento de cada hallazgo.</div>
+
+          <div class="hallazgo" id="h2">
+            <div class="head">
+              <span class="badge badge-solid-danger">H-2 · Alta · Contradicción</span>
+              <h3>El alcance incluye montaje a bordo pero el presupuesto no recoge partida de montaje</h3>
+            </div>
+            <p>PPT/ETC §3.1 (p.9) incluye "instalación y puesta en servicio a cargo del proveedor"; el desglose económico (partidas 1-8) solo presupuesta material.</p>
+            <details>
+              <summary style="cursor:pointer; font-size:12px; font-weight:800; color:var(--info-strong); margin-top:8px">▾ De dónde viene (procedencia del hallazgo)</summary>
+              <div style="margin-top:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px">
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 1 · PPT/ETC §3.1, p.9</div>
+                  <p style="margin:6px 0 0">«…la instalación y puesta en servicio de las válvulas correrá a cargo del proveedor…»</p>
+                </div>
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 2 · Económica · Hoja Resumen</div>
+                  <p style="margin:6px 0 0">«Partidas 1-8: material · Σ 214.500,00 € — sin línea de montaje ni puesta en servicio.»</p>
+                </div>
+              </div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <span class="chip">Regla aplicada: N-010 §4.8 · coherencia alcance-presupuesto</span>
+                <span class="chip">Agente: Revisión Preventiva v1.1</span>
+                <a class="btn btn-ghost btn-sm" href="trazabilidad.html" style="padding:3px 10px; font-size:10.5px">Ver grafo completo →</a>
+              </div>
+            </details>
+            <div class="meta">
+              <span class="chip">📄 PPT/ETC §3.1, p.9</span>
+              <span class="chip">📄 Económica · Hoja Resumen</span>
+              <span class="chip">Regla N-010 §4.8</span>
+              <a class="btn btn-ghost btn-sm" href="editor.html" style="padding:2px 10px; font-size:10.5px">Resolver en el editor…</a>
+            </div>
+          </div>
+
+          <div class="hallazgo media" id="h3">
+            <div class="head">
+              <span class="badge badge-solid-warn">H-3 · Media · Contradicción</span>
+              <h3>Desfase de plazos: ficha de inicio (16 semanas) vs PPT/ETC (8 semanas de material)</h3>
+            </div>
+            <details>
+              <summary style="cursor:pointer; font-size:12px; font-weight:800; color:var(--info-strong); margin-top:8px">▾ De dónde viene (procedencia del hallazgo)</summary>
+              <div style="margin-top:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px">
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 1 · Ficha inicio §3, p.1</div>
+                  <p style="margin:6px 0 0">«Plazo de entrega: 16 semanas desde la formalización del contrato.»</p>
+                </div>
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 2 · PPT/ETC §3.2, p.10</div>
+                  <p style="margin:6px 0 0">«Entrega del material: 8 semanas desde el encargo. (No define plazo de instalación.)»</p>
+                </div>
+              </div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <span class="chip">Regla aplicada: P-APR-001 · plazos coherentes</span>
+                <span class="chip">Agente: Revisión Preventiva v1.1</span>
+              </div>
+            </details>
+          </div>
+
+          <div class="hallazgo media">
+            <div class="head">
+              <span class="badge badge-solid-warn">H-4 · Media · Incompletitud</span>
+              <h3>Informe justificativo ilegible (escaneado sin OCR)</h3>
+            </div>
+            <p>No se puede verificar la excepción al procedimiento invocada. El resto del expediente no queda bloqueado.</p>
+            <details>
+              <summary style="cursor:pointer; font-size:12px; font-weight:800; color:var(--info-strong); margin-top:8px">▾ De dónde viene (procedencia del hallazgo)</summary>
+              <div style="margin-top:10px">
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">RESULTADO DE INGESTA</div>
+                  <p style="margin:6px 0 0"><span class="mono" style="font-size:11px">DOC_ILEGIBLE</span> — el documento no tiene capa de texto; no se ha extraído ningún fragmento. Se solicita versión con OCR o digitalización corporativa.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+
+          <div class="hallazgo media" id="h5">
+            <div class="head">
+              <span class="badge badge-solid-warn">H-5 · Media · Contradicción</span>
+              <h3>El contrato tipo M-XXIV (suministros) no recoge los criterios de aceptación de la instalación definidos en la PPT/ETC</h3>
+            </div>
+            <p>El modelo de contrato previsto contempla la recepción del material (§6) pero no los criterios de aceptación de los servicios de instalación: las condiciones contractuales no quedan alineadas con el alcance.</p>
+            <details>
+              <summary style="cursor:pointer; font-size:12px; font-weight:800; color:var(--info-strong); margin-top:8px">▾ De dónde viene (procedencia del hallazgo)</summary>
+              <div style="margin-top:10px; display:grid; grid-template-columns:1fr 1fr; gap:14px">
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 1 · Modelo contrato M-XXIV §6, p.11</div>
+                  <p style="margin:6px 0 0">«…la recepción del suministro se verificará contra albarán y certificados de material…»</p>
+                </div>
+                <div style="border:1px solid var(--info-border); background:var(--info-bg); padding:12px 14px; font-size:12.5px">
+                  <div style="font-size:10px; font-weight:800; color:var(--info-strong); letter-spacing:.06em">FRAGMENTO 2 · PPT/ETC §4, p.12</div>
+                  <p style="margin:6px 0 0">«Criterios de aceptación: prueba funcional de cada válvula instalada y registro de resultado en el libro de buque.»</p>
+                </div>
+              </div>
+              <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+                <span class="chip">Regla aplicada: I-C-008 · condiciones contractuales coherentes</span>
+                <span class="chip">Agente: Revisión Preventiva v1.1</span>
+              </div>
+            </details>
+            <div class="meta">
+              <span class="chip">📄 Modelo contrato §6, p.11</span>
+              <span class="chip">📄 PPT/ETC §4, p.12</span>
+              <span class="chip">Regla I-C-008</span>
+              <a class="btn btn-ghost btn-sm" href="editor.html" style="padding:2px 10px; font-size:10.5px">Resolver en el editor…</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <h2>Documentación pendiente</h2>
+          <table class="tbl">
+            <thead><tr><th>Documento / dato</th><th>Solicitado a</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td><b>Informe justificativo con capa de texto</b></td><td>Demandante · DTI</td><td><span class="badge badge-info">Solicitado</span></td></tr>
+              <tr><td><b>Incoterm / punto de entrega</b></td><td>Área económica</td><td><span class="badge badge-warn">Pendiente respuesta</span></td></tr>
+              <tr><td><b>Plazo de entrega homogeneizado</b></td><td>DT Systems</td><td><span class="badge badge-warn">Pendiente respuesta</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section" style="max-width:640px; margin-left:auto; margin-right:auto">
+        <div class="btn-row" style="justify-content:space-between">
+          <a class="btn btn-ghost" href="generacion.html">← Volver a generación</a>
+          <a class="btn btn-primary" href="editor.html">Continuar a revisión humana →</a>
+        </div>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Herramienta de apoyo · no sustituye la decisión del comprador</span>
+    </footer>
+  </div>
+</div>
+
+<a class="chat-fab" href="asistente.html"><span class="dot"></span> Asistente</a>
+</body>
+</html>
+

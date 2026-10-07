@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. — Mis expedientes (Compras)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html" class="active"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 3 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs">C.A.R.M.E.N. / Perfil Compras</div>
+          <h1>Mis expedientes</h1>
+          <p>Decisión formal sobre cada expediente: siempre del comprador y del órgano competente.</p>
+        </div>
+        <a class="btn btn-primary" href="expediente.html">+ Nuevo expediente</a>
+      </div>
+
+      <div class="grid-3">
+        <div class="card kpi">
+          <span class="mark"><span class="badge badge-ok">Aceptable</span></span>
+          <div class="label">Utilización efectiva</div>
+          <div class="value">68<small> %</small></div>
+          <div class="target">cota ≥ 50 % · 19/28 expedientes del mes</div>
+        </div>
+        <div class="card kpi">
+          <span class="mark"><span class="badge badge-ok">Aceptable</span></span>
+          <div class="label">Resultados útiles</div>
+          <div class="value">74<small> %</small></div>
+          <div class="target">cota ≥ 65 % · sobre resultados valorados</div>
+        </div>
+        <div class="card kpi">
+          <span class="mark"><span class="badge badge-ok">Aceptable</span></span>
+          <div class="label">Ciclos de corrección</div>
+          <div class="value">2,1</div>
+          <div class="target">cota ≤ 3,0 · línea base 3,8</div>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-top:16px">
+        <span style="font-size:11.5px; color:var(--nv-slate)">Indicadores RK-01..04 · calculados automáticamente desde el registro de actividad (ETC §8)</span>
+        <a class="btn btn-ghost btn-sm" href="#">Más detalles en Power BI ↗</a>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <table class="tbl">
+            <thead>
+              <tr><th>Expediente</th><th>Objeto</th><th>Estado documental</th><th>Paso del flujo</th><th></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">EXP-2026-0147</td>
+                <td><b>Válvulas de balasto y achique · F-110 lote 3</b><br><span class="muted">214.500,00 € est. · Diseño de Casco</span></td>
+                <td><span class="badge badge-warn">Apto con ajustes</span></td>
+                <td class="muted">3 · Revisión automática emitida</td>
+                <td><a class="btn btn-ghost btn-sm" href="revision.html">Continuar flujo →</a></td>
+              </tr>
+              <tr>
+                <td class="mono">EXP-2026-0131</td>
+                <td><b>Sustitución de estanterías metálicas · CVE</b><br><span class="muted">18.900,00 € est. · Servicios</span></td>
+                <td><span class="badge badge-info">En preparación</span></td>
+                <td class="muted">1 · Ingesta documental</td>
+                <td><a class="btn btn-ghost btn-sm" href="expediente.html">Continuar flujo →</a></td>
+              </tr>
+              <tr>
+                <td class="mono">EXP-2026-0128</td>
+                <td><b>Mantenimiento del telémetro · BAM</b><br><span class="muted">41.250,00 € est. · DT Systems</span></td>
+                <td><span class="badge badge-ok">Apto para continuar</span></td>
+                <td class="muted">5 · Pendiente de exportar</td>
+                <td><a class="btn btn-ghost btn-sm" href="valoracion.html">Continuar flujo →</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="callout info">
+          <span class="ico">▶</span>
+          <div><b>¿Cómo funciona?</b> Cada expediente avanza en cinco pasos, navegables desde la cabecera de pasos: <a href="expediente.html">ingesta</a> → <a href="generacion.html">generación guiada</a> → <a href="revision.html">revisión automática</a> → <a href="editor.html">revisión humana</a> → <a href="valoracion.html">exportación y valoración</a>.</div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Herramienta de apoyo · no sustituye la decisión del comprador</span>
+    </footer>
+  </div>
+</div>
+
+<a class="chat-fab" href="asistente.html"><span class="dot"></span> Asistente</a>
+</body>
+</html>
+

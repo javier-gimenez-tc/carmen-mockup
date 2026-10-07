@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. — Mockup de la solución (Sobre 2)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body class="cover">
+<div class="cover-inner">
+
+  <div style="display:flex; align-items:center; gap:18px; margin-bottom:30px">
+    <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="50">
+    <div style="width:1px; height:44px; background:rgba(255,255,255,.28)"></div>
+    <div>
+      <div style="font-size:21px; font-weight:800; letter-spacing:.14em">C.<span style="color:var(--nv-cyan)">A.R.M.E.N.</span></div>
+      <div style="font-size:10px; letter-spacing:.1em; color:rgba(255,255,255,.6)">CENTRO DE APOYO A LA REDACCIÓN Y MEJORA DE EXPEDIENTES · FASE 1</div>
+    </div>
+  </div>
+
+  <h1 class="cover-title">Mockup interactivo de la <span>solución</span></h1>
+  <p class="lead">
+    Aplicación web que QUENTAL propone desplegar en la suscripción Azure corporativa de Navantia (Exp. 5100073845 MAD-2026-09-17).
+    Dos perfiles, cinco pasos: <b style="color:#fff">ingesta → generación guiada → revisión automática → revisión humana → exportación</b>.
+    Cada resultado es trazable hasta su fuente; la decisión formal queda siempre en las personas.
+  </p>
+
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; align-items:center">
+    <span class="top-env"><span class="dot"></span> Datos de prueba — nada real</span>
+    <span style="font-size:11.5px; color:rgba(255,255,255,.55)">Azure corporativa · IdP corporativo · Microsoft Foundry / Azure OpenAI (provisión Navantia)</span>
+  </div>
+
+  <div class="map-grid">
+    <a class="map-card" href="login.html">
+      <div class="n">Acceso</div>
+      <h3>Login corporativo y selección de perfil</h3>
+      <p>IdP corporativo. Entra como Compras o como Demandante: los menús y flujos cambian según el perfil.</p>
+      <div class="refs"><span>HU 1.1</span><span>RF-03</span></div>
+    </a>
+    <a class="map-card" href="dashboard.html">
+      <div class="n">Compras · inicio</div>
+      <h3>Mis expedientes + KPIs</h3>
+      <p>Cinco pasos por expediente; el reporting de KPIs se publica en el cuadro de mando corporativo (Power BI).</p>
+      <div class="refs"><span>RK-01..04</span><span>ETC §8</span></div>
+    </a>
+    <a class="map-card" href="dashboard-demandante.html">
+      <div class="n">Demandante · inicio</div>
+      <h3>Mis necesidades de compra</h3>
+      <p>Bandeja del demandante: necesidades en estructuración, pendientes de ti y entregadas a Compras.</p>
+      <div class="refs"><span>RF-03</span><span>ETC §3.2.2</span></div>
+    </a>
+    <a class="map-card" href="expediente.html">
+      <div class="n">Paso 1 · Ingesta</div>
+      <h3>Crear expediente e ingestar</h3>
+      <p>Tipologías de la ETC, Word/PDF/Excel; lo no procesable se señala sin bloquear el expediente.</p>
+      <div class="refs"><span>HU 1.2</span><span>RF-09</span></div>
+    </a>
+    <a class="map-card" href="generacion.html">
+      <div class="n">Paso 2 · Generación</div>
+      <h3>Generación guiada de documentación</h3>
+      <p>FIP, IIP, IEP, PCP y contrato; el agente pregunta solo lo no determinable. La edición del borrador ocurre en el paso 4.</p>
+      <div class="refs"><span>HU-CAR-01</span><span>RF-04/06</span></div>
+    </a>
+    <a class="map-card" href="revision.html">
+      <div class="n">Paso 3 · Revisión auto.</div>
+      <h3>Informe resumen ejecutivo</h3>
+      <p>Tres estados de clasificación, hallazgos con documento y apartado afectado, pendientes y recomendación.</p>
+      <div class="refs"><span>HU-CAR-03</span><span>RF-15</span></div>
+    </a>
+    <a class="map-card" href="editor.html">
+      <div class="n">Paso 4 · Revisión humana</div>
+      <h3>Editor con asistente a partes iguales</h3>
+      <p>Borrador editable con fuente por afirmación; los hallazgos, al hacer clic, muestran el fragmento de donde vienen.</p>
+      <div class="refs"><span>HU-CAR-02/05</span><span>RF-13/14</span></div>
+    </a>
+    <a class="map-card" href="valoracion.html">
+      <div class="n">Paso 5 · Cierre</div>
+      <h3>Exportación y valoración</h3>
+      <p>Exporta lo validado; cinco estados de valoración con motivo, conservados en auditoría.</p>
+      <div class="refs"><span>HU-CAR-06</span><span>RF-16/17</span></div>
+    </a>
+    <a class="map-card" href="trazabilidad.html">
+      <div class="n">Transversal</div>
+      <h3>Grafo de procedencia</h3>
+      <p>Afirmación → fuente y fragmento → regla y agente → validación humana → aprobación (ETC §4.2).</p>
+      <div class="refs"><span>HU-CAR-05</span><span>RT-06</span></div>
+    </a>
+    <a class="map-card" href="asistente.html">
+      <div class="n">Transversal</div>
+      <h3>Asistente en lenguaje natural</h3>
+      <p>Respuestas con citas al fragmento, abstención explícita ante falta de evidencia y próximos pasos.</p>
+      <div class="refs"><span>HU-CAR-04</span><span>RF-12</span></div>
+    </a></div>
+
+  <div style="margin-top:34px; display:flex; gap:10px">
+    <a class="btn btn-cyan" href="login.html">▶ Iniciar el recorrido con el perfil Compras</a>
+    <a class="btn btn-ghost" href="dashboard-demandante.html">Ver perfil Demandante</a>
+  </div>
+
+  <p style="margin-top:36px; font-size:11px; color:rgba(255,255,255,.5); max-width:840px">
+    Mockup estático navegable elaborado por QUENTAL para el Sobre 2 · PCP-CR §16 (Mockup de la solución) ·
+    Paleta y tipografía alineadas con el diseño publicado de Navantia, S.A., S.M.E. · C.A.R.M.E.N. es herramienta de apoyo
+    y no sustituye las responsabilidades del comprador, del área técnica, de las unidades responsables, de Asesoría Jurídica
+    ni de los órganos competentes · Ningún dato de este mockup es real.
+  </p>
+
+</div>
+</body>
+</html>
+

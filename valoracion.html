@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. · Paso 5 — Validación por documento, exportación y valoración</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html" class="active"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 5 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <nav class="stepper">
+        <a class="step done" href="expediente.html"><span class="n">1</span><span class="lbl">Ingesta documental</span></a>
+        <a class="step done" href="generacion.html"><span class="n">2</span><span class="lbl">Generación guiada</span></a>
+        <a class="step done" href="revision.html"><span class="n">3</span><span class="lbl">Revisión automática</span></a>
+        <a class="step done" href="editor.html"><span class="n">4</span><span class="lbl">Revisión humana</span></a>
+        <a class="step cur" href="valoracion.html"><span class="n">5</span><span class="lbl">Exportación</span></a>
+      </nav>
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs"><a href="editor.html">Revisión humana</a> / Paso 5</div>
+          <h1>Validación por documento · exportación y valoración</h1>
+          <p>La validación y la valoración son <b>por documento</b>; la elevación del expediente es del comprador y la aprobación final, del órgano competente.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Documentos generados — validar, valorar y exportar cada uno</h2>
+        <div class="sub">Solo se exporta lo validado. Cada fichero lleva incrustada su etiqueta de tipo de salida y registra la exportación en auditoría.</div>
+        <table class="tbl">
+          <thead><tr><th>Documento</th><th>Validación humana</th><th>Tipo de salida</th><th>Valoración</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><b>FIP v2</b><br><span class="muted">sin vacíos · 27 afirmaciones trazadas</span></td>
+              <td><span class="estado-doc ed-ok">Validada ✓</span></td>
+              <td><span class="tipo-borrador tipo-salida">Borrador aprobado</span></td>
+              <td><span class="badge badge-ok">Aceptado</span></td>
+              <td><a class="btn btn-ghost btn-sm" href="#">⬇ Exportar Word</a></td>
+            </tr>
+            <tr>
+              <td><b>IIP v2</b><br><span class="muted">2 mods. menores del comprador</span></td>
+              <td><span class="estado-doc ed-ok">Validada ✓</span></td>
+              <td><span class="tipo-borrador tipo-salida">Borrador aprobado</span></td>
+              <td><span class="badge badge-ok">Con mods. menores</span></td>
+              <td><a class="btn btn-ghost btn-sm" href="#">⬇ Exportar Word</a></td>
+            </tr>
+            <tr>
+              <td><b>PCP v3</b><br><span class="muted">hallazgo H-2 abierto · incoterm pendiente</span></td>
+              <td><span class="estado-doc ed-warn">Pendiente de validar</span></td>
+              <td><span class="tipo-borrador tipo-salida">Borrador</span></td>
+              <td><a class="btn btn-ghost btn-sm" href="#val-pcp">★ Valorar ahora</a></td>
+              <td><a class="btn btn-primary btn-sm" href="editor.html">Ir al editor →</a></td>
+            </tr>
+            <tr>
+              <td><b>Informe de revisión ACT-08712</b><br><span class="muted">apto con ajustes · 4 hallazgos</span></td>
+              <td><span class="estado-doc ed-ok">Emitido ✓</span></td>
+              <td><span class="tipo-recomendacion tipo-salida">Recomendación</span></td>
+              <td><a class="btn btn-ghost btn-sm" href="#val-pcp">★ Valorar</a></td>
+              <td><a class="btn btn-ghost btn-sm" href="#">⬇ Exportar PDF</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section" id="val-pcp">
+        <div class="modal-back" style="padding:28px">
+          <div class="modal">
+            <div style="font-size:10px; font-weight:800; letter-spacing:.1em; color:var(--nv-slate); text-transform:uppercase">Valoración del documento PCP v3 · actuación ACT-08712</div>
+            <h2 style="font-size:17px; margin:4px 0 2px">¿Qué utilidad ha tenido este documento?</h2>
+            <p style="font-size:12px; color:var(--nv-slate); margin:0">La valoración es por documento; alimenta los indicadores RK-03/RK-04 y queda en el registro de auditoría.</p>
+
+            <div class="rate-grid">
+              <div class="rate-opt"><span class="ico">✅</span>Aceptado</div>
+              <div class="rate-opt"><span class="ico">👍</span>Con mods. menores</div>
+              <div class="rate-opt sel"><span class="ico">✏️</span>Modificado sustancialmente</div>
+              <div class="rate-opt"><span class="ico">❌</span>Rechazado</div>
+              <div class="rate-opt"><span class="ico">⏳</span>Pendiente</div>
+            </div>
+
+            <div class="field"><label>Motivo (obligatorio en este estado)</label>
+              <div class="fake-input" style="display:flex; justify-content:space-between">Faltaban condiciones del alcance <span style="color:var(--nv-slate); font-size:11px">▾</span></div>
+            </div>
+            <div class="btn-row" style="justify-content:flex-end">
+              <a class="btn btn-ghost" href="editor.html">← Volver al borrador</a>
+              <a class="btn btn-primary" href="dashboard.html">Registrar valoración ✓</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="callout warn">
+          <span class="ico">⚖</span>
+          <div><b>Elevación del expediente:</b> con todos los documentos validados y exportados, el comprador decide elevar el expediente; la decisión de aprobación corresponde al <b>órgano competente</b> (con el informe de revisión adjunto). C.A.R.M.E.N. no eleva ni aprueba nada por sí misma.</div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Herramienta de apoyo · no sustituye la decisión del comprador</span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
+

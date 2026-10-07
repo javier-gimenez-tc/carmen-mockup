@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>C.A.R.M.E.N. · Paso 1 — Ingesta documental</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="icon" href="assets/img/navantia-icon.png">
+</head>
+<body>
+<div class="app-shell">
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/img/navantia-vertical-white.webp" alt="Navantia" height="30">
+      <span class="sep"></span>
+      <div class="brand-mark">C<span>.</span>A.R.M.E.N<span>.</span></div>
+    </div>
+    <span class="top-env"><span class="dot"></span> Datos de prueba</span>
+    <span class="spacer"></span>
+    <div class="top-user">
+      <div class="avatar">AM</div>
+      <div class="top-user-meta"><div class="name">Aitor Menta</div><div class="role">Perfil Compras</div></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h6>Perfil Compras</h6>
+    <nav class="snav">
+      <a href="dashboard.html"><span class="ico">▦</span> Mis expedientes</a>
+      <a href="expediente.html" class="active"><span class="ico">▤</span> EXP-2026-0147</a>
+    </nav>
+    <h6>Transversal</h6>
+    <nav class="snav">
+      <a href="trazabilidad.html"><span class="ico">⑄</span> Trazabilidad</a>
+      <a href="asistente.html"><span class="ico">✦</span> Asistente</a>
+      <a href="canal.html"><span class="ico">✉</span> Incidencias y mejoras</a>
+    </nav>
+    <div class="sidebar-foot">
+      Expediente activo: <b>EXP-2026-0147</b> · paso 1 de 5<br>
+      Cambiar perfil → <a href="dashboard-demandante.html">Demandante</a><br>
+      <a href="index.html">Mapa de pantallas</a>
+    </div>
+  </aside>
+
+  <div class="app-main">
+    <main class="content">
+
+      <nav class="stepper">
+        <a class="step cur" href="expediente.html"><span class="n">1</span><span class="lbl">Ingesta documental</span></a>
+        <a class="step" href="generacion.html"><span class="n">2</span><span class="lbl">Generación guiada</span></a>
+        <a class="step" href="revision.html"><span class="n">3</span><span class="lbl">Revisión automática</span></a>
+        <a class="step" href="editor.html"><span class="n">4</span><span class="lbl">Revisión humana</span></a>
+        <a class="step" href="valoracion.html"><span class="n">5</span><span class="lbl">Exportación</span></a>
+      </nav>
+
+      <div class="pagehead">
+        <div class="grow">
+          <div class="crumbs"><a href="dashboard.html">Mis expedientes</a> / Paso 1</div>
+          <h1>Crear expediente e ingestar la documentación</h1>
+          <p>Arrastra la documentación en las tipologías y formatos admitidos de la ETC. Lo no procesable se señala sin bloquear el resto.</p>
+        </div>
+      </div>
+
+      <div class="grid-4">
+        <div class="card kpi"><div class="label">Presupuesto est.</div><div class="value" style="font-size:20px">214.500,00 €</div></div>
+        <div class="card kpi"><div class="label">Plazo de entrega</div><div class="value" style="font-size:20px">16 semanas</div></div>
+        <div class="card kpi"><div class="label">Área solicitante</div><div class="value" style="font-size:17px">Diseño de Casco</div></div>
+        <div class="card kpi"><div class="label">Completitud</div><div class="value" style="font-size:20px; color:#c58a00">78 %</div></div>
+      </div>
+
+      <div class="section">
+        <div class="card" style="border-style:dashed; border-width:1.5px; padding:26px; text-align:center; color:var(--nv-slate)">
+          <div style="font-size:20px">⇪</div>
+          <b style="color:var(--nv-deep)">Arrastra aquí los documentos del expediente</b>
+          <div style="font-size:11.5px; margin-top:4px">Word · PDF · Excel — o <a href="#">navega para seleccionar ficheros</a></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <div class="card-head">
+            <div class="grow">
+              <h2>Documentación del expediente</h2>
+              <div class="sub">8 documentos · 6 procesados · 2 con avisos</div>
+            </div>
+            <a class="btn btn-primary" href="generacion.html">Continuar a generación →</a>
+          </div>
+          <table class="tbl">
+            <thead><tr><th>Documento</th><th>Tipología ETC</th><th>Extensión</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td><span class="doc-ico di-word">W</span> <b>Documento de inicio de expediente</b></td><td>Documento de inicio</td><td>6 págs.</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico di-pdf">PDF</span> <b>Ficha de inicio (FAS-13 rev. 4)</b></td><td>Ficha de inicio</td><td>2 págs.</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico di-word">W</span> <b>PPT/ETC — Especificación técnica</b></td><td>PPT/ETC</td><td>34 págs.</td><td><span class="estado-doc ed-warn">Pendiente de firma</span></td></tr>
+              <tr><td><span class="doc-ico di-word">W</span> <b>PCP — plantilla de referencia rev. 7</b></td><td>Pliego (referencia)</td><td>22 págs.</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico di-xls">XLS</span> <b>Documentación económica — partidas</b></td><td>Documentación económica</td><td>3 hojas</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico di-pdf">PDF</span> <b>Informe justificativo — excepción</b></td><td>Informe justificativo</td><td>8 págs.</td><td><span class="estado-doc ed-err">DOC_ILEGIBLE</span> <span class="muted">no bloquea</span></td></tr>
+              <tr><td><span class="doc-ico di-word">W</span> <b>Modelo de contrato M-XXIV</b></td><td>Modelo de contrato</td><td>18 págs.</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico di-pdf">PDF</span> <b>Anuncio y aclaraciones de licitación (ARIBA)</b></td><td>Soporte de licitación</td><td>12 págs.</td><td><span class="estado-doc ed-ok">Procesado</span></td></tr>
+              <tr><td><span class="doc-ico" style="background:#5d6c7b">CAD</span> <b>Anexo técnico-2 — esquema acometidas</b></td><td>Anexos</td><td>DWG</td><td><span class="estado-doc ed-skip">No soportado</span> <span class="muted">solicitar formato admitido</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <div class="card-head">
+            <div class="grow">
+              <h2>Últimas actuaciones del expediente</h2>
+              <div class="sub">Cada actuación genera un registro (ETC §8): expediente, usuario, fecha y hora, funcionalidad, documentos afectados, resultado y estado.</div>
+            </div>
+          </div>
+          <table class="tbl" style="font-size:12.5px">
+            <thead><tr><th>ID</th><th>Fecha y hora</th><th>Usuario</th><th>Funcionalidad</th><th>Resultado</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">ACT-08712</td><td>Hoy 09:42</td><td>A. Nieto</td><td>Revisión automática</td><td>Informe: Apto con ajustes · 4 hallazgos</td><td>Finalizada</td></tr>
+              <tr><td class="mono">ACT-08706</td><td>Hoy 09:15</td><td>A. Nieto</td><td>Validación de borrador</td><td>IIP v2 materializado · 2 mods. menores</td><td>Finalizada</td></tr>
+              <tr><td class="mono">ACT-08698</td><td>Ayer 18:03</td><td>A. Nieto</td><td>Snapshot versionado</td><td>Snapshot v6 creado (idem-9f31c)</td><td>Finalizada</td></tr>
+              <tr><td class="mono">ACT-08683</td><td>Ayer 17:41</td><td>A. Nieto</td><td>Generación documental</td><td>Borradores FIP/IIP/PCP · 6 datos solicitados</td><td>Finalizada</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </main>
+    <footer class="app-footer">
+      <span>C.A.R.M.E.N. v0.9 · Mockup de licitación (Sobre 2)</span>
+      <span class="sep"></span>
+      <span>Herramienta de apoyo · no sustituye la decisión del comprador</span>
+    </footer>
+  </div>
+</div>
+
+<a class="chat-fab" href="asistente.html"><span class="dot"></span> Asistente</a>
+</body>
+</html>
+
